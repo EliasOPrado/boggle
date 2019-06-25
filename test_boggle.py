@@ -73,13 +73,13 @@ class TestBoggle(unittest.TestCase):
     
     def test_converting_a_path_to_a_word(self):
         """
-        Ensure that paths can be converted to workds
+        Ensure that paths can be converted to words
         """
         grid = boggle.make_grid(2, 2)
-        oneLetterWord = boggle.path_to_word(grid, [(0,0)])
-        twoLetterWord = boggle.path_to_word(grid, [(0,0), (1,1)])
-        self.assertEqual(oneLetterWord,grid[0, 0])
-        self.assertEqual(oneLetterWord,grid[0, 0] + grid[(1,1)])
+        oneLetterWord = boggle.path_to_word(grid, [(0, 0)])
+        twoLetterWord = boggle.path_to_word(grid, [(0, 0), (1, 1)])
+        self.assertEqual(oneLetterWord, grid[(0, 0)])
+        self.assertEqual(twoLetterWord, grid[(0, 0)] + grid[(1, 1)])
         
     def test_search_grid_for_words(self):
         """
