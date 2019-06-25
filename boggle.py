@@ -98,8 +98,6 @@ def main():
         print(words)
     print("Found %s words"%len(words))
     
-    
-
 
 if __name__ == "__main__":
     main()
