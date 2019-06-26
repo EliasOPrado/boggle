@@ -91,7 +91,7 @@ def main():
     """
     This is the function that will runt the whole project
     """
-    grid = make_grid(3, 3)
+    grid = make_grid(3, 3)#change to 4 x 4 when needed
     dictionary = get_dictionary("words.txt")
     words = search(grid, dictionary)
     for word in words:
